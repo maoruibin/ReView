@@ -19,7 +19,7 @@ allprojects {
 Add the dependency
 ```groovy
 dependencies {
-	 compile 'com.github.maoruibin:ReView:1.0.1'
+	 compile 'com.github.maoruibin:ReView:1.0.2'
 }
 ```
 
