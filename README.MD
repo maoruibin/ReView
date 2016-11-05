@@ -4,7 +4,8 @@ A view to help developers and designers view the View's font size, color, and bo
 <img src="screens/review.gif" width="264">
 
 ## Usage
-### Step 1. Add the JitPack repository to your build file
+### Step 1
+Add the JitPack repository to your build file
 ```groovy
 allprojects {
 	repositories {
@@ -14,15 +15,16 @@ allprojects {
 }
 ```
 
-### Step 2. Add the dependency
+### Step 2
+Add the dependency
 ```groovy
 dependencies {
-	 compile 'com.github.maoruibin:ReView:1.0.0'
+	 compile 'com.github.maoruibin:ReView:1.0.1'
 }
 ```
 
-### Edit your layout XML:
-
+### Step 3
+Edit your layout XML:
 ~~~ xml
 <com.github.maoruibin.RVTextView
     android:layout_width="wrap_content"
