@@ -4,7 +4,11 @@
 
 A view to help developers and designers view the View's font size, color, and border, so far, it only support TextView Button and ImageView.
 
-<img src="screens/review.gif" width="264">
+<img src="files/review.gif" width="264">
+
+## Demo 
+
+[download](files/app-debug.apk)
 
 ## Usage
 ### Step 1
