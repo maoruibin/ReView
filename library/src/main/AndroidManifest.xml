@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<manifest package="name.gudong.review"
+<manifest package="com.github.maoruibin"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application android:allowBackup="true"

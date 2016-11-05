@@ -22,7 +22,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-import name.gudong.review.helper.UIReviewSetting;
+import com.github.maoruibin.helper.UIReviewSetting;
+
 
 public class MainActivity extends AppCompatActivity {
     LinearLayout llTvContainer;
