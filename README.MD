@@ -3,6 +3,25 @@ A view to help developers and designers view the View's font size, color, and bo
 
 <img src="screens/review.gif" width="264">
 
+## Build
+Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```
+Add the dependency
+```groovy
+dependencies {
+	 compile 'com.github.maoruibin:ReView:1.0.0'
+}
+```
+
+
 ## License
 
     Copyright 2016 GuDong
