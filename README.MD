@@ -1,4 +1,7 @@
 # ReView
+[![](https://jitpack.io/v/maoruibin/ReView.svg)](https://jitpack.io/#maoruibin/ReView)
+[![](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/maoruibin/ReView/blob/master/LICENSE.txt)
+
 A view to help developers and designers view the View's font size, color, and border, so far, it only support TextView Button and ImageView.
 
 <img src="screens/review.gif" width="264">
