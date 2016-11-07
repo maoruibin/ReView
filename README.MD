@@ -63,6 +63,23 @@ Edit your layout XML:
     android:textSize="15sp"/>
 ~~~
 
+## Step 4
+
+Setting options
+ 
+```java
+// set current is review mod or not
+UIReviewSetting.getInstance().isReviewMod(true);
+// set is show border or not 
+UIReviewSetting.getInstance().isShowBorder(true);
+// set is show text color or not
+UIReviewSetting.getInstance().isShowTextColor(true);
+// set is show text size by dp or not
+UIReviewSetting.getInstance().isShowTextSizeDp(true);
+// set is show text size by sp or not
+UIReviewSetting.getInstance().isShowTextSizeSp(true);
+```
+
 ## Author
 
 [Github](https://github.com/maoruibin)

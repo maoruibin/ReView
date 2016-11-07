@@ -57,7 +57,7 @@ public class UIDisplayFrameAndInfoImpl implements IReviewControl {
 
     @Override
     public boolean isReviewMod() {
-        return mSetting.isDevelop();
+        return mSetting.isReviewMod();
     }
 
     @Override

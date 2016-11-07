@@ -38,11 +38,11 @@ public class UIReviewSetting {
         private static UIReviewSetting settingCenter = new UIReviewSetting();
     }
 
-    public void isDevelop(boolean flag){
+    public void isReviewMod(boolean flag){
         isReviewMod = flag;
     }
 
-    public boolean isDevelop(){
+    public boolean isReviewMod(){
         return isReviewMod;
     }
 
