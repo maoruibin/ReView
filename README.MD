@@ -34,7 +34,7 @@ allprojects {
 Add the dependency
 ```groovy
 dependencies {
-	 compile 'com.github.maoruibin:ReView:1.0.2'
+	 compile 'com.github.maoruibin:ReView:1.0.3'
 }
 ```
 
@@ -63,7 +63,7 @@ Edit your layout XML:
     android:textSize="15sp"/>
 ~~~
 
-## Step 4
+### Step 4
 
 Setting options
  
@@ -79,6 +79,7 @@ UIReviewSetting.getInstance().isShowTextSizeDp(true);
 // set is show text size by sp or not
 UIReviewSetting.getInstance().isShowTextSizeSp(true);
 ```
+you can get more information by watch demo.  
 
 ## Author
 
