@@ -12,7 +12,7 @@ An introductory article written in Chinese [关于 ReView](http://gudong.name/20
 Because of quality of gif, the effect of ReView demo is not looks clear,fell free to download demo apk and run it on mobile device,
 you will watch it more clearly.
 
-[download link by fir](http://fir.im/mvzb)
+[download link](files/app-debug.apk)
 
 or Qrcode
 
