@@ -6,9 +6,17 @@ A view to help developers and designers view the View's font size, color, and bo
 
 <img src="files/review.gif" width="264">
 
-## Demo 
+An introductory article written in Chinese [关于 ReView](http://gudong.name/2016/11/07/about-review.html)
 
-[download](files/app-debug.apk)
+## Demo 
+Because of quality of gif, the effect of ReView demo is not looks clear,fell free to download demo apk and run it on mobile device,
+you will watch it more clearly.
+
+[download link by fir](http://fir.im/mvzb)
+
+or Qrcode
+
+![qrcode](http://7xr9gx.com1.z0.glb.clouddn.com/fir-review.png)
 
 ## Usage
 ### Step 1
@@ -54,6 +62,15 @@ Edit your layout XML:
     android:textColor="#f00000"
     android:textSize="15sp"/>
 ~~~
+
+## Author
+
+[Github](https://github.com/maoruibin)
+
+[Home](http://gudong.name)
+
+[Weibo](http://weibo.com/maoruibin)
+
 
 ## License
 
