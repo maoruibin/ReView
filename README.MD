@@ -68,13 +68,16 @@ UIReviewSetting.getInstance().isShowTextSizeSp(true);
 ```
 you can get more information by watch demo.  
 
+
+Inspired by douban 
+
 ## Author
+[http://gudong.name](http://gudong.name)
 
-[Github](https://github.com/maoruibin)
+[https://github.com/maoruibin](https://github.com/maoruibin)
 
-[Home](http://gudong.name)
 
-[Weibo](http://weibo.com/maoruibin)
+[http://weibo.com/maoruibin](http://weibo.com/maoruibin)
 
 
 ## License
