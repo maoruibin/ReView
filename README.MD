@@ -39,29 +39,16 @@ dependencies {
 ```
 
 ### Step 3
-Edit your layout XML:
-~~~ xml
-<com.github.maoruibin.RVTextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="I am TextView"
-    android:textColor="#f00000"
-    android:textSize="15sp"/>
-    
-<com.github.maoruibin.RVButton
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="I am TextView"
-    android:textColor="#f00000"
-    android:textSize="15sp"/>
-    
-<com.github.maoruibin.RVImage
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="I am TextView"
-    android:textColor="#f00000"
-    android:textSize="15sp"/>
-~~~
+use  `RVHelper.makeLayoutToReviewMod(context);` before super.onCreate(),like this.
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    RVHelper.makeLayoutToReviewMod(this);
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+}
+```
 
 ### Step 4
 

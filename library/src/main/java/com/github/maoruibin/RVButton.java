@@ -21,15 +21,12 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-import com.github.maoruibin.helper.IReviewControl;
-import com.github.maoruibin.helper.UIDisplayFrameAndInfoImpl;
-
 /**
  * Created by GuDong on 2016/10/13 10:40.
  * Contact with gudong.name@gmail.com.
  */
 
-public class RVButton extends Button implements IReviewView {
+class RVButton extends Button implements IReviewView {
 
     private IReviewControl developViewImpl = new UIDisplayFrameAndInfoImpl(this);
 

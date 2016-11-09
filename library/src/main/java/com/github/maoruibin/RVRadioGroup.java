@@ -19,42 +19,42 @@ package com.github.maoruibin;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import android.widget.RadioGroup;
+
 
 /**
- * Created by GuDong on 2016/10/27 15:45.
+ * Created by GuDong on 2016/10/12 09:32.
  * Contact with gudong.name@gmail.com.
  */
 
-class RVImageView extends ImageView implements IReviewView {
+class RVRadioGroup extends RadioGroup implements IReviewView {
 
     private IReviewControl developViewImpl = new UIDisplayFrameAndInfoImpl(this);
 
-    public RVImageView(Context context) {
+    public RVRadioGroup(Context context) {
         super(context);
         init(context);
     }
 
-    public RVImageView(Context context, AttributeSet attrs) {
+    public RVRadioGroup(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
 
-    public RVImageView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        init(context);
-    }
-
     private void init(Context context) {
-        if (!isInEditMode()) {
-            developViewImpl.onInitPaint();
-        }
+        developViewImpl.onInitPaint();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         developViewImpl.onDraw(canvas);
+    }
+
+
+    @Override
+    public Context getContextWrap() {
+        return getContext();
     }
 
     @Override
@@ -75,10 +75,5 @@ class RVImageView extends ImageView implements IReviewView {
     @Override
     public float getMeasuredHeightWarp() {
         return getMeasuredHeight();
-    }
-
-    @Override
-    public Context getContextWrap() {
-        return getContext();
     }
 }

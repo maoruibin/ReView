@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.maoruibin.helper;
+package com.github.maoruibin;
 
 /**
  * Created by GuDong on 2016/10/13 11:08.

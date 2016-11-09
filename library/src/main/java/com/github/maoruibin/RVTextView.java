@@ -21,16 +21,13 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.github.maoruibin.helper.IReviewControl;
-import com.github.maoruibin.helper.UIDisplayFrameAndInfoImpl;
-
 
 /**
  * Created by GuDong on 2016/10/12 09:32.
  * Contact with gudong.name@gmail.com.
  */
 
-public class RVTextView extends TextView implements IReviewView {
+class RVTextView extends TextView implements IReviewView {
 
     private IReviewControl developViewImpl = new UIDisplayFrameAndInfoImpl(this);
 

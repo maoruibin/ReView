@@ -19,36 +19,35 @@ package com.github.maoruibin;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.ImageView;
+import android.widget.EditText;
+
 
 /**
- * Created by GuDong on 2016/10/27 15:45.
+ * Created by GuDong on 2016/10/12 09:32.
  * Contact with gudong.name@gmail.com.
  */
 
-class RVImageView extends ImageView implements IReviewView {
+class RVEditText extends EditText implements IReviewView {
 
     private IReviewControl developViewImpl = new UIDisplayFrameAndInfoImpl(this);
 
-    public RVImageView(Context context) {
+    public RVEditText(Context context) {
         super(context);
         init(context);
     }
 
-    public RVImageView(Context context, AttributeSet attrs) {
+    public RVEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
     }
 
-    public RVImageView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public RVEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context);
     }
 
     private void init(Context context) {
-        if (!isInEditMode()) {
-            developViewImpl.onInitPaint();
-        }
+        developViewImpl.onInitPaint();
     }
 
     @Override
@@ -57,14 +56,20 @@ class RVImageView extends ImageView implements IReviewView {
         developViewImpl.onDraw(canvas);
     }
 
+
+    @Override
+    public Context getContextWrap() {
+        return getContext();
+    }
+
     @Override
     public float getTextSizeWarp() {
-        return -1;
+        return getTextSize();
     }
 
     @Override
     public int getTextColorWarp() {
-        return -1;
+        return getCurrentTextColor();
     }
 
     @Override
@@ -75,10 +80,5 @@ class RVImageView extends ImageView implements IReviewView {
     @Override
     public float getMeasuredHeightWarp() {
         return getMeasuredHeight();
-    }
-
-    @Override
-    public Context getContextWrap() {
-        return getContext();
     }
 }

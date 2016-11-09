@@ -20,19 +20,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
 
-import com.github.maoruibin.helper.UIReviewSetting;
+import com.github.maoruibin.RVHelper;
+import com.github.maoruibin.UIReviewSetting;
 
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout llTvContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        RVHelper.makeLayoutToReviewMod(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        llTvContainer = (LinearLayout) findViewById(R.id.ll_tv_container);
     }
 
     @Override
@@ -44,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.findItem(R.id.is_develop_mod).setChecked(UIReviewSetting.getInstance().isDevelop());
+        menu.findItem(R.id.is_develop_mod).setChecked(UIReviewSetting.getInstance().isReviewMod());
         menu.findItem(R.id.is_show_frame).setChecked(UIReviewSetting.getInstance().isShowBorder());
         menu.findItem(R.id.show_text_color).setChecked(UIReviewSetting.getInstance().isShowTextColor());
         menu.findItem(R.id.show_text_size_dp).setChecked(UIReviewSetting.getInstance().isShowTextSizeDp());
@@ -58,10 +57,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.is_develop_mod:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    UIReviewSetting.getInstance().isDevelop(false);
+                    UIReviewSetting.getInstance().isReviewMod(false);
                 } else {
                     item.setChecked(true);
-                    UIReviewSetting.getInstance().isDevelop(true);
+                    UIReviewSetting.getInstance().isReviewMod(true);
                 }
                 break;
             case R.id.is_show_frame:

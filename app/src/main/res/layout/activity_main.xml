@@ -41,7 +41,7 @@
             android:textColor="#000"
             android:textSize="14sp"/>
 
-        <com.github.maoruibin.RVTextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:layout_marginTop="10dp"
@@ -50,7 +50,7 @@
             android:textSize="15sp"/>
 
 
-        <com.github.maoruibin.RVTextView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="10dp"
@@ -64,14 +64,48 @@
             android:layout_height="56dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="ImageView Demo"
+            android:text="Other"
             android:textColor="#000"
             android:textSize="14sp"/>
 
-        <com.github.maoruibin.RVImageView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="please input "/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="please check"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:checkedButton="@+id/rb_man"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man"
+                android:textColor="@color/colorAccent"/>
+
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woman"
+                android:textColor="@color/colorAccent"/>
+        </RadioGroup>
+
 
     </LinearLayout>
 
@@ -94,7 +128,7 @@
             android:textSize="14sp"/>
 
 
-        <com.github.maoruibin.RVButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="56dp"
             android:layout_marginTop="10dp"
@@ -102,7 +136,8 @@
             android:textColor="#000000"
             android:textSize="15sp"/>
 
-        <com.github.maoruibin.RVButton
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="10dp"

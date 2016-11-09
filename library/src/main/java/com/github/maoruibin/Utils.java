@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.maoruibin.helper;
+package com.github.maoruibin;
 
 import android.content.Context;
 import android.util.TypedValue;

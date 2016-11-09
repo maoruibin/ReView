@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.maoruibin.helper;
+package com.github.maoruibin;
 
 import android.graphics.Canvas;
 
@@ -22,7 +22,7 @@ import android.graphics.Canvas;
  * Created by GuDong on 2016/10/13 10:45.
  * Contact with gudong.name@gmail.com.
  */
-public interface IReviewControl {
+interface IReviewControl {
     /**
      * check now status is review mod or not default value is false.
      * @return true if now is review mod else return false

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.maoruibin.helper;
+package com.github.maoruibin;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -24,15 +24,13 @@ import android.graphics.RectF;
 import android.text.TextPaint;
 import android.text.TextUtils;
 
-import com.github.maoruibin.IReviewView;
-
 /**
  * show view's border line and text color and size info at the top of view
  * Created by GuDong on 2016/10/13 10:46.
  * Contact with gudong.name@gmail.com.
  */
 
-public class UIDisplayFrameAndInfoImpl implements IReviewControl {
+class UIDisplayFrameAndInfoImpl implements IReviewControl {
     private static final String TAG = "UIDisplayFrameAndInfoImpl";
     private static final int min_width = 100;
     private Paint mPaintInfo;
