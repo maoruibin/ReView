@@ -9,8 +9,6 @@ A view to help developers and designers view the View's font size, color, and bo
 An introductory article written in Chinese [关于 ReView](http://gudong.name/2016/11/07/about-review.html)
 
 ## Demo 
-Because of quality of gif, the effect of ReView demo is not looks clear,fell free to download demo apk and run it on mobile device,
-you will watch it more clearly.
 
 [download link](files/app-debug.apk)
 
@@ -34,12 +32,12 @@ allprojects {
 Add the dependency
 ```groovy
 dependencies {
-	 compile 'com.github.maoruibin:ReView:1.0.3'
+	 compile 'com.github.maoruibin:ReView:1.1.0'
 }
 ```
 
 ### Step 3
-use  `RVHelper.makeLayoutToReviewMod(context);` before super.onCreate(),like this.
+use  `RVHelper.makeLayoutToReviewMod(context)` like this.
 
 ```java
 @Override
@@ -50,9 +48,11 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
+`Note:it  should be called before super.onCreate()`
+
 ### Step 4
 
-Setting options
+Setting options 
  
 ```java
 // set current is review mod or not
