@@ -82,7 +82,7 @@ UIReviewSetting.getInstance().isShowTextSizeSp(true);
 you can get more information by watch demo.  
 
 
-Thanks douban
+Inspired by douban 
 
 ## Author
 [http://gudong.name](http://gudong.name)
