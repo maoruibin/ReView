@@ -4,6 +4,8 @@
 
 A view to help developers and designers view the View's font size, color, and border, so far, it only support TextView Button and ImageView.
 
+Only by one line code,and all TextView、Button、ImageView and [others support view](#support_view) will show text border、color attr in top of View like gif demo.
+
 <img src="files/review.gif" width="264">
 
 An introductory article written in Chinese [关于 ReView](http://gudong.name/2016/11/07/about-review.html)
@@ -70,6 +72,17 @@ you can get more information by watch demo.
 
 
 Inspired by douban 
+
+##<span id="support_view">Support View</span>
+
+* TextView 
+* Button 
+* ImageView 
+* EditText 
+* CheckBox 
+* RadioButton 
+* ProgressBar
+
 
 ## Author
 [http://gudong.name](http://gudong.name)
