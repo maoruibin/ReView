@@ -4,7 +4,7 @@
 
 A view to help developers and designers view the View's font size, color, and border, so far, it only support TextView Button and ImageView.
 
-Only by [one line code](#Step 3),and all TextView、Button、ImageView and [others support view](#Support View) will show text border、color attr in top of View like gif demo.
+Only by one line code,and all TextView、Button、ImageView and others support view will show text border、color attr in top of View like gif demo.
 
 <img src="files/review.gif" width="264">
 
