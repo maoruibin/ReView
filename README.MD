@@ -1,6 +1,7 @@
 # ReView
 [![](https://jitpack.io/v/maoruibin/ReView.svg)](https://jitpack.io/#maoruibin/ReView)
 [![](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/maoruibin/ReView/blob/master/LICENSE.txt)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ReView-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/4652)
 
 A view to help developers and designers view the View's font size, color, and border, so far, it only support TextView Button and ImageView.
 
