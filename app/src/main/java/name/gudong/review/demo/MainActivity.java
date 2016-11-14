@@ -22,7 +22,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.github.maoruibin.RVHelper;
-import com.github.maoruibin.UIReviewSetting;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.findItem(R.id.is_develop_mod).setChecked(UIReviewSetting.getInstance().isReviewMod());
-        menu.findItem(R.id.is_show_frame).setChecked(UIReviewSetting.getInstance().isShowBorder());
-        menu.findItem(R.id.show_text_color).setChecked(UIReviewSetting.getInstance().isShowTextColor());
-        menu.findItem(R.id.show_text_size_dp).setChecked(UIReviewSetting.getInstance().isShowTextSizeDp());
-        menu.findItem(R.id.show_text_size_sp).setChecked(UIReviewSetting.getInstance().isShowTextSizeSp());
+        menu.findItem(R.id.is_develop_mod).setChecked(RVHelper.isReviewMod());
+        menu.findItem(R.id.is_show_frame).setChecked(RVHelper.isShowBorder());
+        menu.findItem(R.id.show_text_color).setChecked(RVHelper.isShowTextColor());
+        menu.findItem(R.id.show_text_size_dp).setChecked(RVHelper.isShowTextSizeDp());
+        menu.findItem(R.id.show_text_size_sp).setChecked(RVHelper.isShowTextSizeSp());
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -57,46 +56,46 @@ public class MainActivity extends AppCompatActivity {
             case R.id.is_develop_mod:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    UIReviewSetting.getInstance().isReviewMod(false);
+                    RVHelper.isReviewMod(false);
                 } else {
                     item.setChecked(true);
-                    UIReviewSetting.getInstance().isReviewMod(true);
+                    RVHelper.isReviewMod(true);
                 }
                 break;
             case R.id.is_show_frame:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    UIReviewSetting.getInstance().isShowBorder(false);
+                    RVHelper.isShowBorder(false);
                 } else {
                     item.setChecked(true);
-                    UIReviewSetting.getInstance().isShowBorder(true);
+                    RVHelper.isShowBorder(true);
                 }
                 break;
             case R.id.show_text_color:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    UIReviewSetting.getInstance().isShowTextColor(false);
+                    RVHelper.isShowTextColor(false);
                 } else {
                     item.setChecked(true);
-                    UIReviewSetting.getInstance().isShowTextColor(true);
+                    RVHelper.isShowTextColor(true);
                 }
                 break;
             case R.id.show_text_size_dp:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    UIReviewSetting.getInstance().isShowTextSizeDp(false);
+                    RVHelper.isShowTextSizeDp(false);
                 } else {
                     item.setChecked(true);
-                    UIReviewSetting.getInstance().isShowTextSizeDp(true);
+                    RVHelper.isShowTextSizeDp(true);
                 }
                 break;
             case R.id.show_text_size_sp:
                 if (item.isChecked()) {
                     item.setChecked(false);
-                    UIReviewSetting.getInstance().isShowTextSizeSp(false);
+                    RVHelper.isShowTextSizeSp(false);
                 } else {
                     item.setChecked(true);
-                    UIReviewSetting.getInstance().isShowTextSizeSp(true);
+                    RVHelper.isShowTextSizeSp(true);
                 }
                 break;
         }

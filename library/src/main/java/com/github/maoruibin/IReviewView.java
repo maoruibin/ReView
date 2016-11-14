@@ -23,7 +23,7 @@ import android.content.Context;
  * Contact with gudong.name@gmail.com.
  */
 
-public interface IReviewView {
+interface IReviewView {
 
     Context getContextWrap();
 

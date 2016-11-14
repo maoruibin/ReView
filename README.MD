@@ -56,15 +56,15 @@ Setting options
  
 ```java
 // set current is review mod or not
-UIReviewSetting.getInstance().isReviewMod(true);
+RVHelper.isReviewMod(true);
 // set is show border or not 
-UIReviewSetting.getInstance().isShowBorder(true);
+RVHelper.isShowBorder(true);
 // set is show text color or not
-UIReviewSetting.getInstance().isShowTextColor(true);
+RVHelper.isShowTextColor(true);
 // set is show text size by dp or not
-UIReviewSetting.getInstance().isShowTextSizeDp(true);
+RVHelper.isShowTextSizeDp(true);
 // set is show text size by sp or not
-UIReviewSetting.getInstance().isShowTextSizeSp(true);
+RVHelper.isShowTextSizeSp(true);
 ```
 you can get more information by watch demo.  
 

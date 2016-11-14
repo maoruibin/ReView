@@ -20,7 +20,7 @@ package com.github.maoruibin;
  * Created by GuDong on 2016/10/13 11:08.
  * Contact with gudong.name@gmail.com.
  */
-public class UIReviewSetting {
+class UIReviewSetting {
     private static boolean isReviewMod = false;
     private static boolean isShowBorder = false;
     private static boolean isShowTextColor = false;
@@ -30,7 +30,7 @@ public class UIReviewSetting {
 
     }
 
-    public static UIReviewSetting getInstance(){
+    static UIReviewSetting getInstance(){
         return SingletonHolder.settingCenter;
     }
 
@@ -38,42 +38,42 @@ public class UIReviewSetting {
         private static UIReviewSetting settingCenter = new UIReviewSetting();
     }
 
-    public void isReviewMod(boolean flag){
+    void isReviewMod(boolean flag){
         isReviewMod = flag;
     }
 
-    public boolean isReviewMod(){
+    boolean isReviewMod(){
         return isReviewMod;
     }
 
-    public void isShowBorder(boolean flag){
+    void isShowBorder(boolean flag){
         isShowBorder = flag;
     }
 
-    public boolean isShowBorder(){
+    boolean isShowBorder(){
         return isShowBorder;
     }
 
-    public void isShowTextColor(boolean flag){
+    void isShowTextColor(boolean flag){
         isShowTextColor = flag;
     }
 
-    public boolean isShowTextColor(){
+    boolean isShowTextColor(){
         return isShowTextColor;
     }
-    public void isShowTextSizeDp(boolean flag){
+    void isShowTextSizeDp(boolean flag){
         isShowTextSizeDp = flag;
     }
 
-    public boolean isShowTextSizeDp(){
+    boolean isShowTextSizeDp(){
         return isShowTextSizeDp;
     }
 
-    public void isShowTextSizeSp(boolean flag){
+    void isShowTextSizeSp(boolean flag){
         isShowTextSizeSp = flag;
     }
 
-    public boolean isShowTextSizeSp(){
+    boolean isShowTextSizeSp(){
         return isShowTextSizeSp;
     }
 }
