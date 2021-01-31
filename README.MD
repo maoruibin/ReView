@@ -9,7 +9,7 @@ Only by one line code,and all TextView、Button、ImageView and others support v
 
 <img src="files/review.gif" width="264">
 
-An introductory article written in Chinese [关于 ReView](http://gudong.name/2016/11/07/about-review.html)
+An introductory article written in Chinese [关于 ReView](http://gudong.site/2016/11/07/about-review.html)
 
 ## Demo 
 
@@ -86,7 +86,7 @@ Inspired by douban
 
 
 ## Author
-[http://gudong.name](http://gudong.name)
+[http://gudong.site](http://gudong.site)
 
 [https://github.com/maoruibin](https://github.com/maoruibin)
 
